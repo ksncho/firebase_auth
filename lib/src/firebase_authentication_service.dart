@@ -17,7 +17,7 @@ class FirebaseAuthenticationService {
   final Logger? log;
 
   final firebaseAuth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
+  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['profile', 'email']);
 
   FirebaseAuthenticationService({
     @Deprecated(
